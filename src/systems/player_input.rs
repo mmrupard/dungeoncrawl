@@ -20,11 +20,10 @@ pub fn player_input(
 
         let mut players = <(Entity, &Point)>::query().filter(component::<Player>());
 
-        // TODO: clippy wants to use a regular map here, but I can't figure out how to get
-        // equivalent behavior
         let (player_entity, destination) = players
             .iter(ecs)
-            .find_map(|(entity, pos)| Some((*entity, *pos + delta)))
+            .map(|(entity, pos)| (*entity, *pos + delta))
+            .next()
             .unwrap();
 
         let mut enemies = <(Entity, &Point)>::query().filter(component::<Enemy>());
