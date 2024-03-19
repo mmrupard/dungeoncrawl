@@ -16,5 +16,5 @@ pub fn entity_render(ecs: &SubWorld, #[resource] camera: &Camera) {
 
     draw_batch
         .submit(5000)
-        .expect("Could not render draw batch for order 5000");
+        .expect("Could not render draw batch for entity render");
 }

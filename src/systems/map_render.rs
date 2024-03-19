@@ -24,5 +24,5 @@ pub fn map_render(#[resource] map: &Map, #[resource] camera: &Camera) {
 
     draw_batch
         .submit(0)
-        .expect("Could not submit draw batch for order 0");
+        .expect("Could not submit draw batch for map render");
 }
