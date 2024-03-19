@@ -130,6 +130,7 @@ impl GameState for State {
             TurnState::EnemyTurn => self
                 .enemy_systems
                 .execute(&mut self.ecs, &mut self.resources),
+            TurnState::GameOver => self.game_over(ctx),
         }
         render_draw_buffer(ctx).expect("Could not render draw buffer");
     }
