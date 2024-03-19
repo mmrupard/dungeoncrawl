@@ -42,5 +42,5 @@ fn goblin() -> (i32, String, FontCharType) {
 }
 
 fn orc() -> (i32, String, FontCharType) {
-    (1, "Orc".to_string(), to_cp437('o'))
+    (5, "Orc".to_string(), to_cp437('o'))
 }
