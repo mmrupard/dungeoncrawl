@@ -42,7 +42,7 @@ impl Map {
     fn valid_exit(&self, loc: Point, delta: Point) -> Option<usize> {
         let destination = loc + delta;
 
-        if !self.in_bounds(destination) && !self.can_enter_tile(destination) {
+        if !self.in_bounds(destination) || !self.can_enter_tile(destination) {
             return None;
         }
 
