@@ -2,6 +2,8 @@ Rusty Rogue is a simple roguelike game that I am using as a vehicle for learning
 
 To play this game just clone the repo and `cargo run`
 
+Art by:
+
 - The dungeon graphics are from [Buch](https://opengameart.org/content/unfinished-dungeon-tileset)
 
 - Potion and scroll graphics are from [Melissa Krautheim](https://opengameart.org/content/fantasy-magic-set)
