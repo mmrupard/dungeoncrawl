@@ -10,4 +10,4 @@ Art by:
 
 - Weaponry graphics are from [Melle](https://opengameart.org/content/fantasy-sword-set)
 
-- Monster graphics are from [Chris Hammons](https://github.com/crawl/tiles)
+- enemy graphics are from [Chris Hammons](https://github.com/crawl/tiles)

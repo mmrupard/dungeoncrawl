@@ -6,6 +6,7 @@ use crate::prelude::*;
 pub fn map_render(ecs: &SubWorld, #[resource] map: &Map, #[resource] camera: &Camera) {
     let mut draw_batch = DrawBatch::new();
     draw_batch.target(0);
+
     let mut fov = <&FieldOfView>::query().filter(component::<Player>());
     let player_fov = fov.iter(ecs).next().unwrap();
 
